@@ -35,13 +35,25 @@ export default function Header() {
             className="flex items-center gap-2 group"
             data-ocid="header.link"
           >
-            <div className="w-8 h-8 rounded-sm bg-primary/10 border border-primary/40 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-              <span className="text-primary font-display font-bold text-sm">
+            <div
+              className="w-8 h-8 rounded-sm border flex items-center justify-center transition-colors"
+              style={{
+                background: "rgba(255,215,0,0.15)",
+                borderColor: "rgba(255,215,0,0.5)",
+              }}
+            >
+              <span
+                className="font-display font-bold text-sm"
+                style={{ color: "#FFD700" }}
+              >
                 RL
               </span>
             </div>
-            <span className="font-display font-bold text-xl text-primary tracking-wide">
-              RL <span className="text-foreground">Gold</span>
+            <span
+              className="font-display font-bold text-xl tracking-wide"
+              style={{ color: "#FFD700" }}
+            >
+              RL <span style={{ color: "#FFD700" }}>Gold</span>
             </span>
           </a>
 
